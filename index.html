@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="assets/css/site.css">
 <link rel="stylesheet" href="assets/css/markup.css">
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap nav">
@@ -48,17 +48,12 @@
 </header>
 <main id="main">
 
-<section class="mk-hero">
-  <div class="wrap mk-hero-grid">
-    <div class="mk-copy">
-      <h1><span class="mk-l">No website?</span> <span class="mk-l mk-struck">Bad website?<svg class="mk-strike" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M6 26 C 90 16, 210 30, 300 18 S 380 14, 394 16"/></svg></span> <span class="mk-l">Fixed.</span></h1>
-      <p class="lede">We build a working demo of your new site from your real business: your services, your photos, your reviews. You see it first. You pay only if you love it.</p>
-      <div class="btn-row" data-hero-actions>
-        <a class="btn btn-primary" id="mkCta" href="contact.html#demo">Get my free demo</a>
-        <a class="btn btn-ghost" href="tel:+16313836322">Call (631) 383-6322</a>
-      </div>
-    </div>
-
+<section class="sx" aria-labelledby="sx-h">
+  <div class="wrap sx-head">
+    <h1 id="sx-h">Your new website, built before you pay.</h1>
+    <p class="sx-sub">We build a working demo from your real business. You see it first, and you pay only if you love it.</p>
+  </div>
+  <div class="wrap sx-grid">
     <figure class="mk-stage" id="mkStage" data-view="new">
       <div class="mk-switch" role="group" aria-label="Compare">
         <button type="button" data-view="new" aria-pressed="true">Your new site</button>
@@ -83,6 +78,7 @@
             <div class="o-marq"><span>*** CALL FOR PRICES *** BEST VIEWED IN INTERNET EXPLORER *** UNDER CONSTRUCTION ***</span></div>
             <p class="o-p">We are a family owned business serving the area since 1998. Please call for hours.</p>
             <p class="o-date">Page last updated: March 2014</p>
+            <span class="o-img">our_work_photo.jpg</span>
             <span class="o-btn">Click Here To Enter</span>
           </div>
         </div>
@@ -93,51 +89,42 @@
         <span class="mk-pin pin-old p5" aria-hidden="true">2</span>
         <span class="mk-pin pin-old p6" aria-hidden="true">3</span>
       </div>
-      <ol class="mk-key key-new">
+      <figcaption>The preview is an example layout. Yours is built from your real business.</figcaption>
+    </figure>
+    <div class="sx-side">
+      <div class="sx-notes">
+        <ol class="mk-key key-new">
         <li>tap to call, on every phone</li>
         <li>your work, your photos</li>
         <li>reviews people already left you</li>
       </ol>
-      <ol class="mk-key key-old">
+        <ol class="mk-key key-old">
         <li>no phone number anywhere?</li>
         <li>customers see this date</li>
         <li>tiny and broken on a phone</li>
       </ol>
+      </div>
       <form class="mk-try" id="mkTry" autocomplete="off" onsubmit="return false">
         <label for="mkName">Try it with your business</label>
-        <div class="mk-try-row">
-          <input id="mkName" name="name" maxlength="32" placeholder="Your business name" spellcheck="false">
-          <div class="mk-trades" role="group" aria-label="Type of business">
+        <input id="mkName" name="name" maxlength="32" placeholder="Your business name" spellcheck="false">
+        <div class="mk-trades" role="group" aria-label="Type of business">
             <button type="button" data-trade="contractor" aria-pressed="true">Contractor</button>
             <button type="button" data-trade="restaurant" aria-pressed="false">Restaurant</button>
             <button type="button" data-trade="salon" aria-pressed="false">Salon</button>
             <button type="button" data-trade="shop" aria-pressed="false">Shop</button>
           </div>
-        </div>
       </form>
-      <figcaption>The preview is an example layout. Yours is built from your real business.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section class="mk-promise">
-  <div class="wrap mk-promise-grid">
-    <h2>People look you up before they call.</h2>
-    <div>
-      <p class="lede">If they find nothing, or a site that looks abandoned, they call the next business on the list. You never even know they were there.</p>
-      <ul class="mk-losses">
-        <li><b>They can't find you.</b> No site means no Google presence beyond a map pin.</li>
-        <li><b>It breaks on phones.</b> Tiny text, broken menus, no tap-to-call.</li>
-        <li><b>It looks abandoned.</b> Old prices, wrong hours, a 2014 copyright.</li>
-        <li><b>It doesn't earn trust.</b> No reviews, no photos of real work.</li>
-      </ul>
+      <div class="sx-act" data-hero-actions>
+        <a class="btn btn-primary sx-cta" id="mkCta" href="contact.html#demo">Get my free demo</a>
+        <p>Free, no obligation. Usually ready within 48 hours.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section mk-how" id="how">
+<section class="section mk-how" id="how" aria-labelledby="how-h">
   <div class="wrap">
-    <h2>See it first. Pay only if you love it.</h2>
+    <h2 id="how-h">How it works, in three steps.</h2>
     <ol class="mk-steps">
       <li><span class="mk-when">Usually within 48 hours</span><h3>Your free demo</h3><p>We research your business (services, menu, real reviews and photos) and build a working preview of your new site.</p></li>
       <li><span class="mk-when">No deposit, ever</span><h3>Love it? Pay once.</h3><p>Pay the package price in full through a secure Stripe checkout. If you don't love it, you owe nothing.</p></li>
@@ -146,34 +133,10 @@
   </div>
 </section>
 
-<section class="section mk-work" id="examples">
+<section class="section mk-packages" id="packages" aria-labelledby="pk-h">
   <div class="wrap">
     <div class="mk-work-head">
-      <h2>Real work. Real businesses.</h2>
-      <p class="lede">We only show sites we actually built, and we tell you whose they are.</p>
-    </div>
-    <div class="mk-work-grid">
-      <a class="mk-shot big" href="https://curbappealmasonryli.com" target="_blank" rel="noopener">
-        <img src="assets/img/curbappeal.jpg" width="1280" height="800" loading="lazy" alt="Curb Appeal Masonry homepage">
-        <span><b>Curb Appeal Masonry</b> Masonry and tile, Suffolk County. Live on its own domain.</span>
-      </a>
-      <a class="mk-shot" href="https://evelightsli.github.io" target="_blank" rel="noopener">
-        <img src="assets/img/evelights.jpg" width="1280" height="800" loading="lazy" alt="Eve Lights homepage">
-        <span><b>Eve Lights</b> Holiday light installation, Long Island.</span>
-      </a>
-      <a class="mk-shot" href="https://renov8ers.github.io" target="_blank" rel="noopener">
-        <img src="assets/img/renov8ers.jpg" width="1280" height="800" loading="lazy" alt="RENOV8ERS homepage">
-        <span><b>RENOV8ERS</b> Renovation consulting, Suffolk County. The owner's own company.</span>
-      </a>
-    </div>
-    <p class="mk-more"><a href="examples.html">See every example and who it belongs to</a></p>
-  </div>
-</section>
-
-<section class="section mk-packages" id="packages">
-  <div class="wrap">
-    <div class="mk-work-head">
-      <h2>Two packages. One payment.</h2>
+      <h2 id="pk-h">Two packages. One payment.</h2>
       <p class="lede">Everything below is included. Your domain is yours, registered in your name.</p>
     </div>
     <div class="pricing">
@@ -215,9 +178,48 @@
   </div>
 </section>
 
-<section class="section mk-faq" id="faq">
+<section class="section mk-work" id="examples" aria-labelledby="ex-h">
+  <div class="wrap">
+    <div class="mk-work-head">
+      <h2 id="ex-h">Real work. Real businesses.</h2>
+      <p class="lede">We only show sites we actually built, and we tell you whose they are.</p>
+    </div>
+    <div class="mk-work-grid">
+      <a class="mk-shot big" href="https://curbappealmasonryli.com" target="_blank" rel="noopener">
+        <img src="assets/img/curbappeal.jpg" width="1280" height="800" loading="lazy" alt="Curb Appeal Masonry homepage">
+        <span><b>Curb Appeal Masonry</b> Masonry and tile, Suffolk County. Live on its own domain.</span>
+      </a>
+      <a class="mk-shot" href="https://evelightsli.github.io" target="_blank" rel="noopener">
+        <img src="assets/img/evelights.jpg" width="1280" height="800" loading="lazy" alt="Eve Lights homepage">
+        <span><b>Eve Lights</b> Holiday light installation, Long Island.</span>
+      </a>
+      <a class="mk-shot" href="https://renov8ers.github.io" target="_blank" rel="noopener">
+        <img src="assets/img/renov8ers.jpg" width="1280" height="800" loading="lazy" alt="RENOV8ERS homepage">
+        <span><b>RENOV8ERS</b> Renovation consulting, Suffolk County. The owner's own company.</span>
+      </a>
+    </div>
+    <p class="mk-more"><a href="examples.html">See every example and who it belongs to</a></p>
+  </div>
+</section>
+
+<section class="mk-promise" aria-labelledby="why-h">
+  <div class="wrap mk-promise-grid">
+    <h2 id="why-h">People look you up before they call.</h2>
+    <div>
+      <p class="lede">If they find nothing, or a site that looks abandoned, they call the next business on the list. You never even know they were there.</p>
+      <ul class="mk-losses">
+        <li><b>They can't find you.</b> No site means no Google presence beyond a map pin.</li>
+        <li><b>It breaks on phones.</b> Tiny text, broken menus, no tap-to-call.</li>
+        <li><b>It looks abandoned.</b> Old prices, wrong hours, a 2014 copyright.</li>
+        <li><b>It doesn't earn trust.</b> No reviews, no photos of real work.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section mk-faq" id="faq" aria-labelledby="faq-h">
   <div class="wrap mk-faq-grid">
-    <h2>Straight answers.</h2>
+    <h2 id="faq-h">Straight answers.</h2>
     <div class="faq">
       <details><summary>Is the demo really free?</summary><p>Yes. We build a working preview of your new site at no cost and with no obligation. If you don't love it, you owe nothing.</p></details>
       <details><summary>When do I pay?</summary><p>Only after you've seen and approved your demo. You pay the full package price once, through a secure Stripe checkout. There's no deposit and no surprise invoice later.</p></details>
@@ -229,10 +231,10 @@
   </div>
 </section>
 
-<section class="mk-close">
+<section class="mk-close" aria-labelledby="close-h">
   <div class="wrap mk-close-grid">
     <div>
-      <h2>Let's see what your site could look like.</h2>
+      <h2 id="close-h">Let's see what your site could look like.</h2>
       <p>Tell us about your business. We build the demo. You decide.</p>
     </div>
     <div class="mk-close-acts">
