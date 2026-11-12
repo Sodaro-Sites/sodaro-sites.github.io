@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /sodarosites/thanks.html
+Disallow: /thanks.html
 
-Sitemap: https://sodaro-sites.github.io/sodarosites/sitemap.xml
+Sitemap: https://sodaro-sites.github.io/sitemap.xml

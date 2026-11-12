@@ -6,27 +6,25 @@
 <title>Sodaro Sites — No website? Bad website? Fixed.</title>
 <meta name="description" content="We build you a free demo of your new website. You only pay if you love it. Custom sites for any business, live on your own domain in about a week.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://sodaro-sites.github.io/sodarosites/">
-<meta name="theme-color" content="#f4f6f3">
+<link rel="canonical" href="https://sodaro-sites.github.io/">
+<meta name="theme-color" content="#f6f6f3">
 <meta name="author" content="Sodaro Sites">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sodaro Sites">
 <meta property="og:title" content="Sodaro Sites — No website? Bad website? Fixed.">
 <meta property="og:description" content="We build you a free demo of your new website. You only pay if you love it. Custom sites for any business, live on your own domain in about a week.">
-<meta property="og:url" content="https://sodaro-sites.github.io/sodarosites/">
-<meta property="og:image" content="https://sodaro-sites.github.io/sodarosites/assets/img/og.png">
+<meta property="og:url" content="https://sodaro-sites.github.io/">
+<meta property="og:image" content="https://sodaro-sites.github.io/assets/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Sodaro Sites — No website? Bad website? Fixed.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sodaro Sites — No website? Bad website? Fixed.">
 <meta name="twitter:description" content="We build you a free demo of your new website. You only pay if you love it. Custom sites for any business, live on your own domain in about a week.">
-<meta name="twitter:image" content="https://sodaro-sites.github.io/sodarosites/assets/img/og.png">
+<meta name="twitter:image" content="https://sodaro-sites.github.io/assets/img/og.png">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Caveat:wght@500..700&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap">
+<link rel="preload" href="assets/fonts/bricolage-grotesque.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="assets/css/site.css">
 <link rel="stylesheet" href="assets/css/markup.css">
 </head>
@@ -53,21 +51,9 @@
 <section class="mk-hero">
   <div class="wrap mk-hero-grid">
     <div class="mk-copy">
-      <h1>No website?<br>Bad website?<br><span class="mk-fixed">Fixed.</span></h1>
+      <h1><span class="mk-l">No website?</span> <span class="mk-l mk-struck">Bad website?<svg class="mk-strike" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M6 26 C 90 16, 210 30, 300 18 S 380 14, 394 16"/></svg></span> <span class="mk-l">Fixed.</span></h1>
       <p class="lede">We build a working demo of your new site from your real business: your services, your photos, your reviews. You see it first. You pay only if you love it.</p>
-      <form class="mk-try" id="mkTry" autocomplete="off" onsubmit="return false">
-        <label for="mkName">Try it with your business</label>
-        <div class="mk-try-row">
-          <input id="mkName" name="name" maxlength="32" placeholder="Your business name" spellcheck="false">
-          <div class="mk-trades" role="group" aria-label="Type of business">
-            <button type="button" data-trade="contractor" aria-pressed="true">Contractor</button>
-            <button type="button" data-trade="restaurant" aria-pressed="false">Restaurant</button>
-            <button type="button" data-trade="salon" aria-pressed="false">Salon</button>
-            <button type="button" data-trade="shop" aria-pressed="false">Shop</button>
-          </div>
-        </div>
-      </form>
-      <div class="btn-row">
+      <div class="btn-row" data-hero-actions>
         <a class="btn btn-primary" id="mkCta" href="contact.html#demo">Get my free demo</a>
         <a class="btn btn-ghost" href="tel:+16313836322">Call (631) 383-6322</a>
       </div>
@@ -100,26 +86,36 @@
             <span class="o-btn">Click Here To Enter</span>
           </div>
         </div>
-        <svg class="mk-ink" viewBox="0 0 600 420" preserveAspectRatio="none" aria-hidden="true">
-          <g class="ink-new">
-            <path d="M560 -26 C 572 4, 566 34, 548 56" />
-            <path d="M120 444 C 170 436, 250 432, 292 398" />
-            <ellipse cx="478" cy="347" rx="100" ry="54" />
-          </g>
-          <g class="ink-old">
-            <path d="M140 98 C 220 92, 320 102, 462 94" />
-            <ellipse cx="119" cy="215" rx="104" ry="24" />
-            <path d="M24 238 L 162 274 M 162 238 L 24 274" />
-          </g>
-        </svg>
-        <span class="mk-note n-new n1">tap to call, on every phone</span>
-        <span class="mk-note n-new n2">your work, your photos</span>
-        <span class="mk-note n-new n3">reviews people already left you</span>
-        <span class="mk-note n-old n4">no phone number anywhere?</span>
-        <span class="mk-note n-old n5">customers see this date</span>
-        <span class="mk-note n-old n6">tiny and broken on a phone</span>
+        <span class="mk-pin pin-new p1" aria-hidden="true">1</span>
+        <span class="mk-pin pin-new p2" aria-hidden="true">2</span>
+        <span class="mk-pin pin-new p3" aria-hidden="true">3</span>
+        <span class="mk-pin pin-old p4" aria-hidden="true">1</span>
+        <span class="mk-pin pin-old p5" aria-hidden="true">2</span>
+        <span class="mk-pin pin-old p6" aria-hidden="true">3</span>
       </div>
-      <figcaption>Type your business name: the demo above is an example layout. Yours is built from your real business.</figcaption>
+      <ol class="mk-key key-new">
+        <li>tap to call, on every phone</li>
+        <li>your work, your photos</li>
+        <li>reviews people already left you</li>
+      </ol>
+      <ol class="mk-key key-old">
+        <li>no phone number anywhere?</li>
+        <li>customers see this date</li>
+        <li>tiny and broken on a phone</li>
+      </ol>
+      <form class="mk-try" id="mkTry" autocomplete="off" onsubmit="return false">
+        <label for="mkName">Try it with your business</label>
+        <div class="mk-try-row">
+          <input id="mkName" name="name" maxlength="32" placeholder="Your business name" spellcheck="false">
+          <div class="mk-trades" role="group" aria-label="Type of business">
+            <button type="button" data-trade="contractor" aria-pressed="true">Contractor</button>
+            <button type="button" data-trade="restaurant" aria-pressed="false">Restaurant</button>
+            <button type="button" data-trade="salon" aria-pressed="false">Salon</button>
+            <button type="button" data-trade="shop" aria-pressed="false">Shop</button>
+          </div>
+        </div>
+      </form>
+      <figcaption>The preview is an example layout. Yours is built from your real business.</figcaption>
     </figure>
   </div>
 </section>
